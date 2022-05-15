@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.31903.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RF_Control", "RF_Control\RF_Control.csproj", "{5E39C39F-80FB-454F-A288-3F7C61342AFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E39C39F-80FB-454F-A288-3F7C61342AFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E39C39F-80FB-454F-A288-3F7C61342AFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E39C39F-80FB-454F-A288-3F7C61342AFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E39C39F-80FB-454F-A288-3F7C61342AFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C45BDE3-FFE2-429E-A7D1-AA5F6FE1B824}
+	EndGlobalSection
+EndGlobal
