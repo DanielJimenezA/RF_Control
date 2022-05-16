@@ -1,16 +1,10 @@
 ﻿using AsyncAwaitBestPractices;
-using System;
 using System.Diagnostics;
-using System.IO;
 
-namespace RF_Control
+namespace RFControl
 {
     public static class RFController
     {
-        public enum DIRECTIONS
-        {
-            UP, DOWN, RIGHT, LEFT
-        }
         public static void Move(DIRECTIONS direction)
         {
             string wave;
@@ -49,7 +43,7 @@ namespace RF_Control
             Debug.WriteLine($"MOVE - {waveFile}");
             try
             {
-                Process.Start(info).WaitForExitAsync().SafeFireAndForget();
+                Process.Start(info)?.WaitForExitAsync().SafeFireAndForget();
             }
             catch { }
         }

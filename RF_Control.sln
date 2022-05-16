@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.31903.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RF_Control", "RF_Control\RF_Control.csproj", "{5E39C39F-80FB-454F-A288-3F7C61342AFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RFWin", "RF_Control\RFWin.csproj", "{5E39C39F-80FB-454F-A288-3F7C61342AFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RFAvalonia", "RFAvalonia\RFAvalonia.csproj", "{8E3A265A-B5FF-4768-B2A5-A86E0E3F7464}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RFControl", "RFControl\RFControl.csproj", "{981CD832-5E31-44DF-ABDE-3B572D19DC13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{5E39C39F-80FB-454F-A288-3F7C61342AFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E39C39F-80FB-454F-A288-3F7C61342AFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E39C39F-80FB-454F-A288-3F7C61342AFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E3A265A-B5FF-4768-B2A5-A86E0E3F7464}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E3A265A-B5FF-4768-B2A5-A86E0E3F7464}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E3A265A-B5FF-4768-B2A5-A86E0E3F7464}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E3A265A-B5FF-4768-B2A5-A86E0E3F7464}.Release|Any CPU.Build.0 = Release|Any CPU
+		{981CD832-5E31-44DF-ABDE-3B572D19DC13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{981CD832-5E31-44DF-ABDE-3B572D19DC13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{981CD832-5E31-44DF-ABDE-3B572D19DC13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{981CD832-5E31-44DF-ABDE-3B572D19DC13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
