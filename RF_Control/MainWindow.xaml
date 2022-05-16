@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RF_Control"
         mc:Ignorable="d"
-        Background="WhiteSmoke"
+        Background="WhiteSmoke" KeyDown="Window_KeyDown"
         Title="RF Control" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
@@ -29,11 +29,11 @@
         </Grid>
         <local:ArrowsControl Grid.Row="1"/>
         <TextBlock Margin="15" FontSize="12" HorizontalAlignment="Right" Grid.Row="3">
+            <Run Text="Jiménez Angeles Daniel Antonio"/>
+            <LineBreak/>
                 <Run Text="García García Jonathan Eduardo"/>
                 <LineBreak/>
                 <Run Text="Santiesteban González Santiago"/>
-                <LineBreak/>
-                <Run Text="Jiménez Angeles Daniel Antonio"/>
         </TextBlock>
     </Grid>
 </Window>

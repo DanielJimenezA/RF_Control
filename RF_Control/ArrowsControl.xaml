@@ -17,28 +17,25 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Button Name ="Up" Grid.Column="1" Margin="10" Background="Transparent" BorderThickness="0">
+        <Button Name ="Up" Grid.Column="1" Margin="10" Background="Transparent" BorderThickness="0" Click="Up_Click">
             <DockPanel>
                 <Image Source="/Images/up.png" />
             </DockPanel>
         </Button>
-        <Button Name ="left"  Grid.Row="1" Margin="10" Background="Transparent" BorderThickness="0">
+        <Button Name ="left"  Grid.Row="1" Margin="10" Background="Transparent" BorderThickness="0" Click="left_Click">
             <DockPanel>
                 <Image Source="/Images/over.png" />
             </DockPanel>
         </Button>
-        <Button Name ="right" Grid.Column="2"  Grid.Row="1" Margin="10" Background="Transparent" BorderThickness="0">
+        <Button Name ="right" Grid.Column="2"  Grid.Row="1" Margin="10" Background="Transparent" BorderThickness="0" Click="right_Click">
             <DockPanel>
                 <Image Source="/Images/next.png" Stretch="Uniform" />
             </DockPanel>
         </Button>
-        <Button Name ="down" Grid.Column="1" Grid.Row="2" Margin="10" Background="Transparent" BorderThickness="0">
+        <Button Name ="down" Grid.Column="1" Grid.Row="2" Margin="10" Background="Transparent" BorderThickness="0" Click="down_Click">
             <DockPanel>
                 <Image Source="/Images/down.png"/>
             </DockPanel>
         </Button>
-
-
-
     </Grid>
 </UserControl>
