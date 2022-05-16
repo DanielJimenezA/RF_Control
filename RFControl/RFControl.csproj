@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Samples\Adelante.wav" />
+    <None Remove="Samples\Atras.wav" />
+    <None Remove="Samples\Derecha.wav" />
+    <None Remove="Samples\Izquierda.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Samples\Adelante.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Atras.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Derecha.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\Izquierda.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AsyncAwaitBestPractices" Version="6.0.4" />
+  </ItemGroup>
+
+</Project>

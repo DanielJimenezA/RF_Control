@@ -1,19 +1,15 @@
-﻿using RFControl;
-using System.Windows;
-using System.Windows.Input;
+using Avalonia.Controls;
+using Avalonia.Input;
+using RFControl;
 
-namespace RFWin
+namespace RFAvalonia
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
         }
-
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
             switch (e.Key)
