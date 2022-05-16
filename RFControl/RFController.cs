@@ -11,16 +11,16 @@ namespace RFControl
             switch (direction)
             {
                 case DIRECTIONS.UP:
-                    wave = "Adelante.wav";
+                    wave = "adelante";
                     break;
                 case DIRECTIONS.DOWN:
-                    wave = "Atras.wav";
+                    wave = "atras";
                     break;
                 case DIRECTIONS.RIGHT:
-                    wave = "Derecha.wav";
+                    wave = "derecha";
                     break;
                 case DIRECTIONS.LEFT:
-                    wave = "Izquierda.wav";
+                    wave = "izquierda";
                     break;
                 default: throw new ArgumentOutOfRangeException(direction.ToString());
             }
@@ -28,14 +28,18 @@ namespace RFControl
         }
         private static void BroadCast(string waveFile)
         {
+            //sudo hackrf_transfer -f 27000000 -s 2000000 -t izquierda
             FileInfo wavInfo = new FileInfo($"{Environment.CurrentDirectory}/Samples/{waveFile}");
             if (!wavInfo.Exists)
             {
                 throw new FileNotFoundException(wavInfo.FullName);
             }
+            string cmd = $"sudo hackrf_transfer -f 27000000 -s 2000000 -t \"{wavInfo.FullName}\"";
+            Console.Write(cmd);
             ProcessStartInfo info = new ProcessStartInfo()
             {
-                FileName = $"hackrf_transfer -f 27.145 -s 2 -l 14 -t \"{wavInfo.FullName}\"",
+                FileName = "/bin/bash",
+                Arguments = $"-c \"{cmd}\"",
                 UseShellExecute = false,
                 WindowStyle = ProcessWindowStyle.Hidden,
                 CreateNoWindow = true,
