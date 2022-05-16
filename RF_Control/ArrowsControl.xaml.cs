@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace RF_Control
 {
@@ -23,6 +11,26 @@ namespace RF_Control
         public ArrowsControl()
         {
             InitializeComponent();
+        }
+
+        private void Up_Click(object sender, RoutedEventArgs e)
+        {
+            RFController.Move(RFController.DIRECTIONS.UP);
+        }
+
+        private void left_Click(object sender, RoutedEventArgs e)
+        {
+            RFController.Move(RFController.DIRECTIONS.LEFT);
+        }
+
+        private void right_Click(object sender, RoutedEventArgs e)
+        {
+            RFController.Move(RFController.DIRECTIONS.RIGHT);
+        }
+
+        private void down_Click(object sender, RoutedEventArgs e)
+        {
+            RFController.Move(RFController.DIRECTIONS.DOWN);
         }
     }
 }
