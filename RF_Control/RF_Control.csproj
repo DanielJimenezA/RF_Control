@@ -7,4 +7,36 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="down.png" />
+    <None Remove="Images\down.png" />
+    <None Remove="Images\esimelogo.png" />
+    <None Remove="Images\ipn.png" />
+    <None Remove="Images\msti.png" />
+    <None Remove="Images\next.png" />
+    <None Remove="Images\over.png" />
+    <None Remove="Images\up.png" />
+    <None Remove="next.png" />
+    <None Remove="over.png" />
+    <None Remove="up.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\down.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\esimelogo.png" />
+    <Resource Include="Images\ipn.png" />
+    <Resource Include="Images\msti.png" />
+    <Resource Include="Images\next.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\over.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\up.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
 </Project>

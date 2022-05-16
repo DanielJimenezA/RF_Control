@@ -5,40 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RF_Control"
         mc:Ignorable="d"
+        Background="WhiteSmoke"
         Title="RF Control" Height="450" Width="800">
-    <Grid Background="White">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
+    <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <Button Name ="Up" Grid.Column="1" Margin="20" Background="white">
-            <DockPanel>
-                <Image Source="up.png"/>
-            </DockPanel>
-        </Button>
-        <Button Name ="left"  Grid.Row="1" Margin="20" Background="white">
-            <DockPanel>
-                <Image Source="over.png"/>
-            </DockPanel>
-        </Button>
-        <Button Name ="right" Grid.Column="2"  Grid.Row="1" Margin="20" Background="white">
-            <DockPanel>
-                <Image Source="next.png"/>
-            </DockPanel>
-        </Button>
-        <Button Name ="down" Grid.Column="1" Grid.Row="2" Margin="20" Background="white">
-            <DockPanel>
-                <Image Source="down.png"/>
-            </DockPanel>
-        </Button>
         
-
-
+        <!--¿Còmo puedo hacer màs grandes las imàgenes de los botones?????-->
+        
+        <Grid Margin="20" Height="70" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Image Stretch="Uniform" Source="/Images/esimelogo.png" Grid.Column="2"/>
+            <Image Stretch="Uniform" Source="/Images/msti.png" Grid.Column="1"/>
+            <Image Stretch="Uniform" Source="/Images/ipn.png" Grid.Column="0"/>
+           
+        </Grid>
+        <local:ArrowsControl Grid.Row="1"/>
+        <TextBlock Margin="15" FontSize="12" HorizontalAlignment="Right" Grid.Row="3">
+                <Run Text="García García Jonathan Eduardo"/>
+                <LineBreak/>
+                <Run Text="Santiesteban González Santiago"/>
+                <LineBreak/>
+                <Run Text="Jiménez Angeles Daniel Antonio"/>
+        </TextBlock>
     </Grid>
 </Window>
